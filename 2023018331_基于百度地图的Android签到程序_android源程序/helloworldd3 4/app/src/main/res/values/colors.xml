@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <declare-styleable name="SideBar">
+        <attr name="scaleSize" format="integer" />
+        <attr name="scaleItemCount" format="integer" />
+        <attr name="scaleWidth" format="dimension" />
+    </declare-styleable>
+    <color name="input_dvier">#D8D8D8</color>
+    <color name="input_dvier_focus">#1BB879</color>
+    <color name="loginButtonText">#B5B2B2</color>
+    <color name="loginButtonTextFouse">#FFFFFF</color>
+    <color name="loginButtonBackgroundFouse">#07C160</color>
+    <color name="loginButtonBackgroundNotFouse">#D4D8D5</color>
+    <color name="title">#EDEDED</color>
+<!--    <color name="loginText">#5A5959</color>-->
+    <color name="loginText">#070709</color>
+    <color name="textColorHint">#DDDDDD</color>
+<color name="b1">#E2D5BE</color>
+<color name="b2">#C2A56D</color>
+<color name="b3">#082937</color>
+<color name="b4">#F8A414</color>
+<color name="b5">#093C53</color>
+<color name="b6">#72A189</color>
+<color name="b7">#FA2755</color>
+<color name="b8">#CD5225</color>
+<color name="b9">#377681</color>
+<color name="b10">#F8DF5F</color>
+<color name="b11">#17542f</color>
+<color name="b12">#fb4e58</color>
+<color name="b13">#f0efe4</color>
+
+<color name="a1">#fefeff</color>
+<color name="a2">#070709</color>
+<color name="a3">#0a60fe</color>
+<color name="a4">#30bf47</color>
+<color name="a5">#fc2025</color>
+<color name="a6">#efedf4</color>
+<color name="a7">#fea432</color>
+
+        <color name="x1">#FFFFFF</color>
+        <color name="x2">#1C3D5A</color>
+        <color name="x3">#FFD700</color>
+        <color name="x4">#28A745</color>
+        <color name="x5">#DC3545</color>
+        <color name="x6">#007BFF</color>
+
+
+
+</resources>

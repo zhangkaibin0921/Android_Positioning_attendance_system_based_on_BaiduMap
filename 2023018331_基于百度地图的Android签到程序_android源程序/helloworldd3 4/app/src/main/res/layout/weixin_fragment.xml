@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:id="@+id/title"
+         android:background="@color/white"
+        android:gravity="center_vertical"  >
+        <TextView
+        android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签到系统"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/plus"
+            android:background="@color/white"
+            android:onClick="search"
+            android:src="@drawable/ic_baseline_search_24" />
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="29dp"
+            android:background="@color/white"
+            android:onClick="OnMenu"
+            android:src="@drawable/ic_baseline_add_circle_24" />
+    </RelativeLayout>
+
+    <ListView
+
+        android:id="@+id/listView"
+        android:background="@drawable/listviewb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:padding="8dp" />
+
+</LinearLayout>

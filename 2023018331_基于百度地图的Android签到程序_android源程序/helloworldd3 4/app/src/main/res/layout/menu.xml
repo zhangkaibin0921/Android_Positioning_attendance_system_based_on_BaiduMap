@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:background="@color/x1">
+    <!--菜单发起群聊-->
+       <Button
+           android:background="@color/x1"
+                 android:textColor="@color/x2"
+    android:textSize="16sp"
+
+    android:elevation="4dp"
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+
+        android:drawableLeft="@drawable/ic_baseline_group_add_24"
+        android:drawablePadding="10dp"
+        android:paddingLeft="20dp"
+        android:padding="13dp"
+        android:text="发起群聊"
+
+        android:onClick="createGroup"
+      ></Button>
+
+    <!--菜单添加好友-->
+       <Button
+           android:background="@color/x1"
+                 android:textColor="@color/x2"
+    android:textSize="16sp"
+
+    android:elevation="4dp"
+        android:id="@+id/addfri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+
+        android:drawableLeft="@drawable/ic_baseline_person_search_24"
+        android:drawablePadding="10dp"
+        android:paddingLeft="20dp"
+        android:padding="13dp"
+        android:text="添加好友"
+        ></Button>
+
+
+    <!--菜单帮助与反馈-->
+<!--    <Button
+                -->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_weight="1"-->
+<!--         android:background="@color/white"-->
+<!--        android:drawableLeft="@drawable/picture4"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:padding="13dp"-->
+<!--        android:text="帮助反馈"-->
+<!--        android:textColor=""-->
+<!--        android:textSize="18sp">-->
+
+<!--    </Button>-->
+
+
+</LinearLayout>

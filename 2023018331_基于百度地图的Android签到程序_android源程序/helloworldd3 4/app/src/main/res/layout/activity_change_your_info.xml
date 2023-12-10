@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/x1">
+
+    <TextView
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/x2"
+                android:textSize="32.5sp"
+
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="个人信息"
+               />
+
+        </LinearLayout>
+
+        <!--账号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+             <TextView
+            android:textColor="@color/x6"
+            android:textSize="24.5sp"
+
+        android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="用户名："
+                
+                />
+
+           <EditText
+                android:textSize="22.5sp"
+                android:paddingLeft="25dp"
+                android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:maxLength="11"
+                android:hint="输入用户名"/>
+
+
+
+        </LinearLayout>
+
+        <!--密码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+             <TextView
+            android:textColor="@color/x6"
+            android:textSize="24.5sp"
+
+        android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="性别：    "
+                />
+
+           <EditText
+                android:textSize="22.5sp"
+                android:paddingLeft="25dp"
+                android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+                android:id="@+id/usersex"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="请输入性别"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+             <TextView
+            android:textColor="@color/x6"
+            android:textSize="24.5sp"
+
+        android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="备注：    "
+                 />
+
+           <EditText
+                android:textSize="22.5sp"
+                android:paddingLeft="25dp"
+                android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+                android:id="@+id/usersign"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="请输入个性签名"/>
+        </LinearLayout>
+           <Button
+               android:background="@drawable/buttom"
+                android:textColor="@color/x1"
+                android:textSize="25.5sp"
+                
+
+    android:elevation="4dp"
+            android:id="@+id/ok2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:text="修改个人信息"/>
+
+        <!--手机号码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+             <TextView
+            android:textColor="@color/x6"
+            android:textSize="24.5sp"
+
+        android:fontFamily="sans-serif-condensed-light"
+               
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="旧密码："
+                />
+
+           <EditText
+                android:textSize="22.5sp"
+                android:paddingLeft="25dp"
+                android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+
+                android:id="@+id/useroldpass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:maxLength="11"
+                android:hint="       请输入旧密码"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+             <TextView
+            android:textColor="@color/x6"
+            android:textSize="24.5sp"
+
+        android:fontFamily="sans-serif-condensed-light"
+               
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="新密码："
+                
+                />
+
+           <EditText
+                android:textSize="22.5sp"
+                android:paddingLeft="25dp"
+                android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+
+                android:id="@+id/usernewpass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:maxLength="11"
+                android:hint="       请输入新密码"/>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+             <TextView
+            android:textColor="@color/x6"
+            android:textSize="24.5sp"
+
+        android:fontFamily="sans-serif-condensed-light"
+               
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="新密码："
+                />
+
+           <EditText
+                android:textSize="22.5sp"
+                android:paddingLeft="25dp"
+                android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+                android:id="@+id/usernewpassA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:maxLength="11"
+                android:hint="       请再次输入新密码"/>
+
+        </LinearLayout>
+
+           <Button
+                android:textColor="@color/x1"
+                android:textSize="25.5sp"
+               
+    android:elevation="4dp"
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+android:background="@drawable/buttom"
+            android:text="确定修改"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+        android:fontFamily="sans-serif-condensed-light"
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/x2"
+                android:textSize="32.5sp"
+
+                android:text="返回个人中心"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+           <Button
+                android:textColor="#c9b6ba"
+                android:textSize="25.5sp"
+                 
+    android:elevation="4dp"
+            android:id="@+id/quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+
+            android:backgroundTint="#662021"
+
+            android:text="退出登陆"/>
+
+
+    </LinearLayout>
+</LinearLayout>

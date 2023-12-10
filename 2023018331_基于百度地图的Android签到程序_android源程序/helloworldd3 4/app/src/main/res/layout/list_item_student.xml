@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- list_item_student.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/purple_200"
+        android:fontFamily="sans-serif-condensed-light"
+                android:id="@+id/text_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="20.5sp"
+                android:textStyle="bold" />
+            <TextView
+                android:textColor="@color/x2"
+        android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20.5sp"
+                android:text="出勤次数"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="@color/x4"
+        android:fontFamily="sans-serif-condensed-light"
+                android:id="@+id/text_attendance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20.5sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/x2"
+        android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20.5sp"
+                android:text="缺勤次数"
+                android:textStyle="bold" />
+        <TextView
+            android:textColor="@color/x5"
+        android:fontFamily="sans-serif-condensed-light"
+            android:id="@+id/text_absence"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20.5sp" />
+            <TextView
+                android:textColor="@color/x2"
+        android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20.5sp"
+                android:text="出勤率"
+                android:textStyle="bold" />
+            <TextView
+                android:textColor="@color/x6"
+        android:fontFamily="sans-serif-condensed-light"
+            android:id="@+id/text_attendance_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20.5sp" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

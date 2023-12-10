@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/x1"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+        android:fontFamily="sans-serif-condensed-light"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:gravity="bottom|center"
+            android:paddingBottom="15dp"
+            android:text="登录"
+            android:textColor="#FFFFFB"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:textSize="22.5sp"
+            android:textColor="@color/x2"
+            android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3"
+
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="请输入用户名"
+
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+           />
+
+        <EditText
+            android:textSize="22.5sp"
+            android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            />
+
+
+        <TextView
+        android:fontFamily="sans-serif-condensed-light"
+            android:id="@+id/Forgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/x2"
+            android:text="忘记密码" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+           <Button
+            android:textColor="#FFFFFF"
+            android:textSize="30.5sp"
+            android:elevation="4dp"
+
+            android:id="@+id/Sign_in"
+               android:background="@drawable/buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="登 录"/>
+
+           <Button
+                 android:textColor="#FFFFFF"
+            android:textSize="30.5sp"
+            android:background="@drawable/buttom"
+            android:elevation="4dp"
+            android:id="@+id/Sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="注 册" />
+    </LinearLayout>
+</LinearLayout>
+

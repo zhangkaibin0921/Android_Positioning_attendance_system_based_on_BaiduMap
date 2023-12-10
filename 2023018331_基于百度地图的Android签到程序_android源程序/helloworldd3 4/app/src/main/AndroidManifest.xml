@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.helloworldd">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 访问网络，进行地图相关业务数据请求，包括地图数据，路线规划，POI检索等 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取网络状态，根据网络状态切换进行数据请求网络转换 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 读取外置存储。如果开发者使用了so动态加载功能并且把so文件放在了外置存储区域，则需要申请该权限，否则不需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 写外置存储。如果开发者使用了离线地图，并且数据写在外置存储区域，则需要申请该权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Helloworld"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".HistorySign"
+            android:exported="false" />
+        <activity
+            android:name=".SignStatic"
+            android:exported="false" />
+        <activity
+            android:name=".EditSign"
+            android:exported="false" />
+        <activity
+            android:name=".StudentSign"
+            android:exported="false" />
+        <activity
+            android:name=".WaitFile2"
+            android:exported="false" />
+        <activity
+            android:name=".DetailSign"
+            android:exported="false" />
+        <activity
+            android:name=".WaitFile"
+            android:exported="false" />
+        <activity
+            android:name=".AddASign"
+            android:exported="false" />
+        <activity
+            android:name=".SignGroup"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeYourInfo"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPwdPage"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BaiduActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateGroup"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewFreind"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeFlie"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="RqqIr0c9Pg5PT5yn3bAh82GWECB2KMfa" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+    </application>
+
+</manifest>

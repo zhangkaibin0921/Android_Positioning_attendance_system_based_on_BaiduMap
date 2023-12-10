@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage"
+    android:background="@color/x1"
+    >
+
+    <ImageView
+        android:id="@+id/registerpic"
+        android:layout_width="238dp"
+        android:layout_height="263dp"
+        app:layout_constraintBottom_toBottomOf="@+id/verify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <EditText
+        android:textSize="28.5sp"
+        android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+        android:id="@+id/verifyphone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:hint="电话"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:flow_verticalBias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417"
+        app:layout_constraintWidth_percent=".8"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:textSize="24.5sp"
+        android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+        android:id="@+id/verifycode"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:hint="输入验证码"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:flow_verticalBias=".0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528"
+        app:layout_constraintWidth_percent=".8"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+       <Button
+                 android:textColor="@color/x1"
+    android:textSize="22.5sp"
+
+
+        android:id="@+id/verifyButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+android:background="@drawable/buttom"
+        android:hint="获取"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:flow_verticalBias=".0"
+
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        app:layout_constraintWidth_percent=".8"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <EditText
+        android:textSize="28.5sp"
+        android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+        android:id="@+id/Fpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:flow_verticalBias=".0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66"
+        app:layout_constraintWidth_percent=".8"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <EditText
+        android:textSize="28.5sp"
+        android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+        android:id="@+id/Fretype"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:hint="再次输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:flow_verticalBias=".0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774"
+        app:layout_constraintWidth_percent=".8"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+       <Button
+                 android:textColor="#FFFFFF"
+    android:textSize="24.5sp"
+android:background="@drawable/buttom"
+    android:elevation="4dp"
+        android:id="@+id/verify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="修改密码"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901"
+        app:layout_constraintWidth_percent=".8"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

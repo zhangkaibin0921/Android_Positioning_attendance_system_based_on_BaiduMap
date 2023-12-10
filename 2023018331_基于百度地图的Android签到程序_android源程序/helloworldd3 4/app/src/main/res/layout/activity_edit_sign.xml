@@ -1,0 +1,274 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".EditSign">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 选择签到类型 -->
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:textSize="24.5sp"
+            android:textColor="@color/x6"
+        android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择签到类型:" />
+        <RadioGroup
+            android:layout_marginVertical="10dp"
+            android:id="@+id/radio_group_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:textSize="20.5sp"
+            android:textColor="@color/black"
+                android:id="@+id/radio_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每天" />
+            <RadioButton
+                android:textSize="20.5sp"
+                android:textColor="@color/black"
+                android:id="@+id/radio_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每周" />
+            <RadioButton
+                android:textSize="20.5sp"
+                android:textColor="@color/black"
+                android:id="@+id/radio_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每月" />
+        </RadioGroup>
+
+        <!-- 填入签到次数 -->
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:textSize="24.5sp"
+            android:textColor="@color/x6"
+        android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="填入签到次数:" />
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:textSize="22sp"
+            android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+       
+"
+            android:id="@+id/edit_text_times"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="number"
+            android:hint="请输入签到次数" />
+
+        <!-- 签到起始时间 -->
+        <LinearLayout
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+               <Button
+                   android:layout_marginVertical="15dp"
+                   
+                   android:padding="18dp"
+android:background="@drawable/buttom"
+                   android:textColor="#FFFFFF"
+    android:textSize="20sp"
+
+    android:elevation="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击设置签到起始时间:"
+                android:id="@+id/set_start"/>
+            <TextView
+                android:textColor="@color/x2"
+        android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/set_start_text" />
+        </LinearLayout>
+        <!--        <DatePicker-->
+        <!--            android:id="@+id/date_picker_start"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content" />-->
+
+        <!-- 签到截止时间 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+               <Button
+                   android:layout_marginVertical="10dp"
+android:padding="18dp"
+                   android:background="@drawable/buttom"
+                 android:textColor="#FFFFFF"
+    android:textSize="20sp"
+
+    android:elevation="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击设置签到截止时间:"
+                android:id="@+id/set_end"/>
+            <TextView
+                android:textColor="@color/x2"
+        android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/set_end_text" />
+        </LinearLayout>
+        <!--        <DatePicker-->
+        <!--            android:id="@+id/date_picker_end"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content" />-->
+
+        <!-- 设置签到的标题 -->
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:textSize="24.5sp"
+            android:textColor="@color/x6"
+        android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置签到的标题并选择标题风格:" />
+        <EditText
+
+            android:layout_marginVertical="10dp"
+            android:textSize="22sp"
+            android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"
+            android:paddingLeft="25dp"
+
+            android:id="@+id/edit_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="请输入签到标题" />
+        <RadioGroup
+            android:id="@+id/radio_group_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_marginVertical="10dp"
+                android:textSize="20.5sp"
+                android:textColor="@color/black"
+                android:id="@+id/radio_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XX年X月X日签到" />
+            <RadioButton
+                android:layout_marginVertical="10dp"
+                android:textSize="20.5sp"
+                android:textColor="@color/black"
+                android:id="@+id/radio_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第n次签到" />
+            <RadioButton
+                android:layout_marginVertical="10dp"
+                android:textSize="20.5sp"
+                android:textColor="@color/black"
+                android:id="@+id/radio_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不使用" />
+        </RadioGroup>
+        <TextView
+
+            android:layout_marginVertical="10dp"
+            android:textSize="24.5sp"
+            android:textColor="@color/x6"
+        android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每场签到持续多长时间:" />
+        <EditText
+            android:layout_marginVertical="15dp"
+            android:textSize="22sp"
+            android:textColor="@color/x2"
+                android:background="@drawable/edit_text_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColorHint="#b3b3b3
+"            android:paddingLeft="25dp"
+
+            android:id="@+id/edit_text_time"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:hint="请输入持续时间" />
+
+
+        <!-- 签到按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- 在这里添加您的布局元素，如按钮、输入框等 -->
+
+               <Button
+                   android:layout_marginVertical="15dp"
+                   android:background="@drawable/buttom"
+                 android:textColor="#FFFFFF"
+    android:textSize="20sp"
+
+    android:elevation="4dp"
+                android:id="@+id/btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定" />
+
+            <LinearLayout
+                android:id="@+id/ll_views_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- 动态添加的视图将放在这个容器中 -->
+                <ListView
+                    android:layout_marginVertical="15dp"
+                    android:background="@drawable/listviewb"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/listvv"
+                    android:divider="@android:color/darker_gray"
+                    android:dividerHeight="0.5dp"
+                                        android:padding="8dp" />
+
+                   <Button
+                       android:layout_marginVertical="15dp"
+                 android:textColor="#FFFFFF"
+    android:textSize="20sp"
+android:padding="10dp"
+    android:elevation="4dp"
+                       android:background="@drawable/buttom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交"
+                    android:id="@+id/post"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

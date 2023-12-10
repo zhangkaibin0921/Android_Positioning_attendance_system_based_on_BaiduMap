@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.2.0" type="baseline" client="gradle" dependencies="false" name="AGP (7.2.0)" variant="fatal" version="7.2.0">
+
+    <issue
+        id="WrongFolder"
+        message="This file should be placed in a `values`/ folder, not a `layout`/ folder"
+        errorLine1="&lt;resources>&lt;/resources>"
+        errorLine2="~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/acc.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+</issues>
